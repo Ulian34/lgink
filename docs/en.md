@@ -2,7 +2,7 @@
 
 # keyink
 
-The keylogger in just 2 lines, sent to Telegram.
+The keylogger in just 2 lines. Sending to Telegram.
 
 ## Description
 `keyink` is just starting its development. Its functionality will be expanded in the future.
