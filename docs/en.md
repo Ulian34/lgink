@@ -49,8 +49,8 @@ Transmitted parameters:
 * `clipboard` - add a clipboard logger (True/False).
 * `processes` - add process logger (True/False).
 * `special_keys` - add special keys Enter, Shift, Alt etc. to logs (True/False).
-* `pause_iteration` - check frequency of running processes in seconds.
-* `sleep` - frequency of sending collected logs in seconds.
+* `processes_pause` - check frequency of running processes in seconds.
+* `iteration_pause` - frequency of sending collected logs in seconds.
 
 ## Telegram bot setup
 ### Getting token
