@@ -36,9 +36,9 @@ pip install lgink==0.0.1
 ## Example usage
 ### Standard
 ```python
-from keyink.multilogger import Logger
+from lgink.multilogger import Logger
 
-Logger(token="YOUR_TOKEN", user_id=YOUR_ID).run()
+Logger(token="YOUR_TOKEN", user_id=YOUR_ID, iteration_pause=60).run()
 ```
 The standard ```Logger``` launches all available loggers and sends the collected data as an archive to you in Telegram every hour.
 
