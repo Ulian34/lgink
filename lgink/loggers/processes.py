@@ -8,11 +8,11 @@ from psutil import process_iter
 
 class ProcessesLogger(Thread):
 
-    def __init__(self, storage_path: str, storage_folder: str, pause_iteration):
+    def __init__(self, storage_path: str, storage_folder: str, processes_pause: int):
         Thread.__init__(self, name="processes")
 
         self.processes = []
-        self.pause_iteration = pause_iteration
+        self.processes_pause = processes_pause
 
         self.storage_path = storage_path
         self.storage_folder = storage_folder
@@ -56,4 +56,4 @@ class ProcessesLogger(Thread):
 
         while True:
             self.__check_processes()
-            sleep(self.pause_iteration)
+            sleep(self.processes_pause)

@@ -8,13 +8,13 @@ from requests import post
 
 class Sender(Thread):
 
-    def __init__(self, zip_name: str, storage_path: str, storage_folder: str, token: str, user_id: int, sleep: int, clear_logs):
+    def __init__(self, zip_name: str, storage_path: str, storage_folder: str, token: str, user_id: int, processes_pause: int, clear_logs):
         Thread.__init__(self, name="sender")
 
-        self.sleep = sleep
         self.zip_name = zip_name
         self.storage_path = storage_path
         self.storage_folder = storage_folder
+        self.processes_pause = processes_pause
 
         self.token = token
         self.user_id = user_id
@@ -49,7 +49,7 @@ class Sender(Thread):
     def run(self):
 
         while True:
-            sleep(self.sleep)
+            sleep(self.processes_pause)
             self.__create_archive()
             self.__send_archive()
             self.__delete_files()
