@@ -1,11 +1,11 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
-# keyink
+# lgink
 
 The keylogger in just 2 lines. Sending to Telegram.
 
 ## Description
-`keyink` is just starting its development. Its functionality will be expanded in the future.
+`lgink` is just starting its development. Its functionality will be expanded in the future.
 
 ## Navigation
 * [Current features](#Сurrent-features)
