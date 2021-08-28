@@ -50,8 +50,8 @@ Logger(token="YOUR_TOKEN", user_id=YOUR_ID, iteration_pause=60).run()
 * `clipboard` - добавить логер буфера обмена (True/False).
 * `processes` - добавить логер процессов (True/False).
 * `special_keys` - добавлять в логи спец клавиши Enter, Shift, Alt  и тд (True/False).
-* `pause_iteration` - частота проверки запущенных процессов в секундах.
-* `sleep` - частота отправки собранных логов в секундах.
+* `processes_pause` - частота проверки запущенных процессов в секундах.
+* `iteration_pause` - частота отправки собранных логов в секундах.
 
 ## Настройка Telegram бота
 ### Получение токена
